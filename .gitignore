@@ -1,0 +1,6 @@
+.idea/
+out/
+*.iml
+.DS_Store
+plan1*.md
+plan2*.md
