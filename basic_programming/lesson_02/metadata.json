@@ -1,0 +1,11 @@
+{
+  "topic": "Организационные вопросы. Знакомство. Установка необходимых программ.",
+  "date": "2024-01-18",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/hello_world/src/Main.java"
+  ],
+  "video": ""
+}
