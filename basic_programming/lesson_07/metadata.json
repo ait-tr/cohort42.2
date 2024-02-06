@@ -1,0 +1,20 @@
+{
+  "topic": "Strings. Practice",
+  "date": "2024-02-06",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/Main01.java",
+    "src/last_homework/Task01.java",
+    "src/last_homework/Task04.java",
+    "src/last_homework/Task03.java",
+    "src/last_homework/Task02.java",
+    "src/last_homework/Task05.java",
+    "src/Main00.java",
+    "src/Main02.java",
+    "src/Main04.java",
+    "src/Main03.java"
+  ],
+  "video": ""
+}
