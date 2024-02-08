@@ -1,0 +1,18 @@
+{
+  "topic": "Ternary operator. Loops",
+  "date": "2024-02-08",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/Main06.java",
+    "src/Main05.java",
+    "src/Main04.java",
+    "src/Main03.java",
+    "src/Main02.java",
+    "src/Main01.java",
+    "src/last_homework/Task02.java",
+    "src/last_homework/Task01.java"
+  ],
+  "video": ""
+}
