@@ -1,79 +1,126 @@
-Unit тестирование — это метод тестирования, при котором отдельные блоки исходного кода программы, называемые "юнитами", проверяются на корректность работы. В контексте Java для unit тестирования часто используются библиотеки, такие как JUnit, которая является стандартом де-факто для таких тестов.
+### Параметризованные тесты в JUnit 5
 
-### Основы unit тестирования
+Параметризованные тесты в JUnit 5 позволяют запускать один и тот же тестовый метод с различными наборами данных. Это особенно полезно, когда вы хотите протестировать одну и ту же логику с разными входными данными и ожидать определенные результаты.
 
-Unit тесты должны быть:
-1. **Независимыми** - Каждый тестовый случай должен быть независим от других.
-2. **Повторяемыми** - Тесты должны возвращать одинаковый результат каждый раз, когда они выполняются при неизменных условиях.
-3. **Автоматизированными** - Тесты должны выполняться автоматически без вмешательства пользователя.
-4. **Быстрыми** - Тесты должны выполняться быстро.
+#### Основные аннотации для параметризованных тестов
 
-### Пример простого класса и его unit теста в Java
+1. **@ParameterizedTest**: Обозначает метод как параметризованный тест.
+2. **@ValueSource**: Подает фиксированные наборы значений в тест.
+3. **@EnumSource**: Подает значения перечислений (enum).
+4. **@MethodSource**: Подает значения из статических методов.
+5. **@CsvSource**: Подает значения из строк CSV.
+6. **@CsvFileSource**: Подает значения из файлов CSV.
+7. **@ArgumentsSource**: Подает значения из пользовательских источников аргументов.
 
-Допустим, у нас есть простой класс `Calculator`, который умеет выполнять базовые арифметические операции. Вот как может выглядеть этот класс:
+#### Примеры параметризованных тестов
 
+##### Пример 1: Использование @ValueSource
 ```java
-public class Calculator {
-    public int add(int a, int b) {
-        return a + b;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+public class ValueSourceTest {
+
+    @ParameterizedTest
+    @ValueSource(strings = {"racecar", "radar", "level"})
+    void testIsPalindrome(String candidate) {
+        assertTrue(isPalindrome(candidate));
     }
 
-    public int subtract(int a, int b) {
-        return a - b;
-    }
-
-    public int multiply(int a, int b) {
-        return a * b;
-    }
-
-    public double divide(int a, int b) {
-        if (b == 0) {
-            throw new IllegalArgumentException("Divider cannot be zero.");
+    boolean isPalindrome(String str) {
+        int n = str.length();
+        for (int i = 0; i < (n / 2); ++i) {
+            if (str.charAt(i) != str.charAt(n - i - 1)) {
+                return false;
+            }
         }
-        return (double) a / b;
+        return true;
     }
 }
 ```
 
-Теперь напишем несколько unit тестов для этого класса, используя библиотеку JUnit:
-
+##### Пример 2: Использование @EnumSource
 ```java
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class CalculatorTest {
+public class EnumSourceTest {
 
-    private Calculator calculator = new Calculator();
-
-    @Test
-    public void testAdd() {
-        assertEquals("10 + 5 must be 15", 15, calculator.add(10, 5));
+    enum Season {
+        WINTER, SPRING, SUMMER, FALL
     }
 
-    @Test
-    public void testSubtract() {
-        assertEquals("10 - 5 must be 5", 5, calculator.subtract(10, 5));
-    }
-
-    @Test
-    public void testMultiply() {
-        assertEquals("10 * 5 must be 50", 50, calculator.multiply(10, 5));
-    }
-
-    @Test
-    public void testDivide() {
-        assertEquals("10 / 5 must be 2.0", 2.0, calculator.divide(10, 5), 0.00001);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void testDivideByZero() {
-        calculator.divide(10, 0);
+    @ParameterizedTest
+    @EnumSource(Season.class)
+    void testWithEnumSource(Season season) {
+        assertNotNull(season);
     }
 }
 ```
 
-### Подходы к написанию тестов
+##### Пример 3: Использование @MethodSource
+```java
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.stream.Stream;
 
-1. **Тестирование исключений**: Как показано в последнем тесте, мы проверяем, что метод `divide` генерирует исключение `IllegalArgumentException` при делении на ноль.
-2. **Параметризованные тесты**: JUnit позволяет создавать параметризованные тесты, когда один и тот же тестовый метод выполняется несколько раз с разными данными.
-3. **Использование моков**: Для тестирования кода, зависящего от внешних систем, часто используются мок-объекты (например, с помощью библиотеки Mockito), чтобы имитировать поведение этих систем.
+public class MethodSourceTest {
+
+    @ParameterizedTest
+    @MethodSource("stringProvider")
+    void testWithMethodSource(String argument) {
+        assertTrue(argument.length() > 0);
+    }
+
+    static Stream<String> stringProvider() {
+        return Stream.of("apple", "banana", "cherry");
+    }
+}
+```
+
+##### Пример 4: Использование @CsvSource
+```java
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CsvSourceTest {
+
+    @ParameterizedTest
+    @CsvSource({
+        "1, 1, 2",
+        "2, 3, 5",
+        "3, 5, 8"
+    })
+    void testAddition(int a, int b, int expected) {
+        assertEquals(expected, a + b);
+    }
+}
+```
+
+##### Пример 5: Использование @CsvFileSource
+```java
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class CsvFileSourceTest {
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
+    void testWithCsvFileSource(int a, int b, int expected) {
+        assertEquals(expected, a + b);
+    }
+}
+```
+
+Файл `data.csv`:
+```
+a,b,expected
+1,1,2
+2,3,5
+3,5,8
+```
