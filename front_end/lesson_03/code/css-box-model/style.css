@@ -1,0 +1,71 @@
+.red-box{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+    border: 20px solid blue;
+    padding: 30px;
+    margin: 50px;
+}
+.blue-box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* граница слева */
+    margin-left:50px;
+     /* граница справа */
+     margin-right: 40px;
+       /* граница сверху */
+       margin-top:30px ;
+         /* граница снизу */
+      margin-bottom: 20px;
+}
+
+.green-box{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    /* 40 -верх 30 лево - право , низ - 10 */
+    padding: 40px 30px 10px;
+}
+.purple-box{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    /* вер низ, лево право */
+    padding:20px 50px;
+}
+
+.black-box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+}
+.rounded-corners{
+    border-radius: 20px;
+}
+.asymetric-corners{
+    border-radius:60px 30px 0 10px;
+}
+
+.orange-box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+span{
+    font-weight: 900;
+}
+.container{
+    display: flex;
+    
+}
+
+/* 1. Создать 20 блоков див
+2. Добавить их в контейнер
+3.Расположить блоки по горизонтали
+4Добавить общий класс для 20ти блоков (ширина высота бордер)
+5.Прописать марджин и паддинг для общего класса этих блоков в два значения */
