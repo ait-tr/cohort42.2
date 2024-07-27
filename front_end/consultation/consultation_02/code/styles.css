@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #08080649;
+  padding: 40px;
+ 
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  border: 2px solid rgb(56, 6, 12);
+  padding: 20px;
+  border-radius: 30px 80px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-image {
+  width: 60%;
+  /* height: 330px; */
+}
+
+.cart_title {
+  font-size: 30px;
+  margin: 10px 0;
+  color: rgb(70, 13, 32);
+}
+
+.age {
+  font-size: 20px;
+  margin: 10px 0;
+  color: rgb(55, 13, 18);
+}
+
+.gender {
+  font-size: 20px;
+  margin: 8px 0;
+  color: rgb(1, 1, 11);
+}
+
+.card__dashed {
+  background-color: rgba(153, 196, 215, 0.47);
+  border-style: dashed;
+}
+
+.card__dotted {
+  background-color: rgb(73, 123, 139);
+  border-style: dotted;
+}
+
+.card__double {
+  background-color: rgba(186, 197, 211, 0.442);
+  border-style: double;
+}
