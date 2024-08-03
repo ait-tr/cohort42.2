@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+body{
+    background-color: #f8efba;
+}
+
+main{
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.photo{
+width: calc(50% - 40px);
+height: calc((35vw - 40px) / 16 * 9);
+/* width: calc(50% - 40px);
+50%: Это 50% ширины родительского элемента.
+- 40px: Это вычитание 40 пикселей из значения 50%. */
+
+/* height: calc((35vw - 40px) / 16 * 9);
+35vw: Это 35% от ширины окна просмотра (viewport width).
+- 40px: Это вычитание 40 пикселей из значения 35vw.
+16: Это деление на 16. Предположительно, это может быть для получения соотношения сторон 16:9.
+* 9: Это умножение на 9 для завершения вычисления соотношения сторон 16:9.
+Таким образом, итоговая высота элемента рассчитывается как 35% ширины окна просмотра минус 40 пикселей,
+ деленное на 16 и умноженное на 9. */
+margin: 20px;
+background-color: orange;
+background-position: center;
+background-size: cover;
+box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+transition: all 0.9s ease;
+}
+
+
+
+.photo:hover{
+    transform: scale(1.7) rotate(3deg);
+}
+
+
+.photo1{
+    background-image: url(../img/img1.jpeg);
+
+}
+.photo2{
+    background-image: url(../img/img2.jpeg);
+}
+.photo3{
+    background-image: url(../img/img3.jpeg);
+}
+.photo4{
+    background-image: url(../img/img4.jpeg);
+}
+.photo5{
+    background-image: url(../img/img5.jpeg);
+}
+.photo6{
+    background-image: url(../img/img6.jpeg);
+}
+.photo7{
+    background-image: url(../img/img7.jpeg);
+}
+.photo8{
+    background-image: url(../img/img8.jpeg);
+}
+.photo9{
+    background-image: url(../img/img9.jpeg);
+}
+.photo10{
+    background-image: url(../img/img10.jpeg);
+}
+.photo11{
+    background-image: url(../img/img11.jpg);
+}
+.photo12{
+    background-image: url(../img/img12.jpeg);
+}
