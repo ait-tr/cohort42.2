@@ -1,0 +1,36 @@
+main{
+  height: 200vh;
+}
+
+.navbar{
+  background-color: white;
+  color: black;
+  height: 40px;
+  font-size: 25px;
+  padding: 20px;
+  display:flex;
+  justify-content: flex-start;
+  gap: 25px;
+  &:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.4s linear;
+  }
+  position: sticky;
+  top: 10px;
+}
+
+.nav-item{
+  text-decoration: underline;
+  font-family: "NarrowNews";
+  &:hover{
+    color: white;
+  }
+}
+
+@font-face {
+  font-family:"NarrowNews";
+  src: url("./fonts/clanot-narrownews.ttf");
+  font-style: normal;
+  font-weight: normal;
+}

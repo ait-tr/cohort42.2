@@ -1,0 +1,14 @@
+div{
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+}
+
+div div:first-child{
+    flex-basis: 25%;
+    background-color: aquamarine;
+}
+div div:last-child{
+    flex-basis: 75%;
+    background-color: bisque;
+}
