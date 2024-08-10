@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Stardos Stencil", Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  background-image: url(./assets/donuts.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-name {
+  font-size: 64px;
+  color: #611a57;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-self: center;
+  gap: 40px;
+  margin: 33px;
+}
+
+.nav-link {
+  text-decoration: overline;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ce41b0;
+  padding: 220px 100px;
+  flex: 1;
+  font-size: 32px;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.paragraph-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 37px;
+}
+
+.introduction {
+  position: relative;
+  margin-bottom: 500px;
+  z-index: 1;
+}
+
+.img-family {
+  width: 500px;
+  position: absolute;
+  top: 445px;
+  left: 372px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style-type: none;
+}
+
+ul > li {
+  background-image: url("./assets/head.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 50px;
+  background-size: 30px 30px;
+}
+
+li > span {
+  font-weight: bold;
+}
+
+.up-button {
+  position: fixed;
+  right: 35px;
+  bottom: 135px;
+  width: 150px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  background-color: #e5f410;
+  z-index: 2;
+}
+
+/* анимация с помощью keyframes */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid rgba(161, 158, 158, 0.137);
+  border-left-color: rgb(31, 31, 129);
+  /* animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; */
+  /* обобщенное свойство */
+  animation: spin 3s infinite linear;
+}
+
+/* @keyframes spin {
+  from {
+    width: 50px;
+  }
+
+  50% {
+    background-color: #611a57;
+  }
+
+  to {
+    width: 100px;
+  }
+} */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
