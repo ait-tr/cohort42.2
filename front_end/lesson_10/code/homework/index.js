@@ -61,7 +61,14 @@ console.log(sum);
 
 // Задание 5 (необязательное).
 // Объявить массив из 5 элементов и заполнить его любыми числами. Присвоить 5 переменным значения из массива с помощью деструктуризации.
-// вернёмся после изучения деструктуризации
+let exampleNum = [10, 4, 20, 11, 3];
+let [x, y, z, a, b] = exampleNum;
+
+console.log(`x - ${x}`)
+console.log(`y - ${y}`)
+console.log(`z - ${z}`)
+console.log(`a - ${a}`)
+console.log(`b - ${b}`)
 
 // Задание 6.
 // Разбить строку
@@ -79,6 +86,6 @@ for (let i = 0; i < words.length; i++) {
   console.log(words[i]);
 }
 
-for(let word of words) {
-  console.log(word)
+for (let word of words) {
+  console.log(word);
 }
