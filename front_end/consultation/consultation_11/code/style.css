@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    /* второй вариант очистки отступов (вместо строк 17, 18, 32,33) */
+}
+/* исследование свойства ox-sizing: border-box */
+/* header {
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+} */
+
+body, html {
+    /* первый вариант очистки отступов */
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+
+}
+
+/* первый вариант очистки отступов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    background: #191919;
+    height: 100%;
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex; 
+    padding: 46px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+.logo-header {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 28px 50px 110px;
+    align-items: center;
+    
+}
+
+.section-latest-episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-episodes-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 64px;
+}
+
+.main-button {
+    padding: 12px 19px;
+    border-radius: 6px;
+    width: fit-content;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: #FFFFFF;
+    background-color: #118DA8;
+    border: none;
+}
+
+.episode-card {
+    display: flex;
+    gap: 60px;
+    padding: 40px;
+    margin: 110px 0px 135px;
+    background-color: #000000;
+    border-radius: 32px;
+}
+
+.episode-card_mod{
+   background-color: darkblue;
+   border: 2px solid yellow;
+}
+
+.episode-picture-container {
+    width: 395;
+    height: 432;
+}
+
+.episode-picture-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+.card-title {
+    font-size: 64px;
+}
+.episode-description {
+    font-size: 22px;
+    color: #FFFFFFB2;
+
+}
+.card-bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.review-cards-container {
+    display: flex;
+    gap: 16px;
+}
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 435px;
+    height: 321px;
+    border-radius: 32px;
+    padding: 50px;
+    background-color: #000000;
+}
+.review-text {
+    font-size: 36px;
+
+}
+
+.review-signature {
+    font-size: 24px;
+    color: #FFFFFFB2;
+
+}
+
+footer {
+    display: flex;
+    border-top: 2px solid #FFFFFF;
+    border-radius:32px;
+    gap: 200px;
+    padding: 93px 100px;
+}
+
+.logo-footer {
+    align-self: center;
+    font-size: 48px;
+}
+
+.footer-nav-container {
+    display: flex;
+    gap: 150px;
+    font-size: 17px;
+}
+
+.footer-nav-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
