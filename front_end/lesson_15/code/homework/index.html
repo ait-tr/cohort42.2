@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW 14</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Форма расчёта идеального веса</h1>
+      <div class="card">
+        <form id="form">
+          <div class="elements-container">
+            <label for="person-height">Рост, см*</label>
+            <input
+              name="height"
+              class="height-input"
+              type="number"
+              placeholder="Введите ваш рост"
+              required
+              min="140"
+              id="person-height"
+            />
+          </div>
+          <div class="elements-container">
+            <label for="person-gender">Выберете пол*</label>
+            <select name="gender" id="person-gender" class="gender-select">
+              <!-- <option value="">Выберете пол</option> -->
+              <option value="male">Мужской</option>
+              <option value="female" selected>Женский</option>
+            </select>
+          </div>
+          <button class="result-button">Рассчитать</button>
+          <div class="result">Здесь будет результат</div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
