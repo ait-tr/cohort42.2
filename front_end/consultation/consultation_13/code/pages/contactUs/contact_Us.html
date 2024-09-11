@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CreateX</title>
+   <link rel="stylesheet" href="../../styles/globalStyles.css">
+   <link rel="stylesheet" href="../../pages/contactUs/style_contact_us.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="container">
+         <header class="header">
+            <div class="logo-nav">
+               <div class="logo">
+                  <a href="../../index.html"><img src="../../assets/logo.svg" alt="logo"></a>
+               </div>
+               <nav class="navbar">
+                  <a href="#" class="navbar__item">About Us</a>
+                  <a href="#" class="navbar__item">Services</a>
+                  <a href="#" class="navbar__item">Work</a>
+                  <a href="#" class="navbar__item">News</a>
+                  <a href="#" class="navbar__item">Contacts</a>
+               </nav>
+            </div>
+            <div class="contacts">
+                  <div class="contacts__item item-phone">
+                     <a href="#">
+                        <div class="contacts__text">Call us</div>
+                        <div class="contacts__coordinates">(405) 555-0128</div>
+                     </a>
+                  </div>               
+               <div class="contacts__item item-email">
+                  <a href="#">
+                     <div class="contacts__text">Talk to us</div>
+                     <div class="contacts__coordinates">hello@createx.com</div>
+                  </a>
+               </div>
+            </div>
+         </header>
+      </div>
+         <main class="content">
+            <div class="container">
+               <h1 class="title">Contact us</h1>
+               <p class="text">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+               <div class="block-form">
+                  <div class="bolock-form__img">
+                     <img src="../../assets/form_image.jpg" alt="doctor">
+                  </div>
+                  <form action="#" method="get"> 
+                     <div class="form-flex-container">
+                        <div class="data-fields">
+                           <div>
+                              <label for="userName_" class="lable"><p class="lable-text required-to-fill">Name</p>
+                                 <p><input tabindex="1" type="text" id="userName_" placeholder="Your name" name="userName" required></p>
+                              </label>
+                           </div>
+                           <div>
+                              <label for="userPhone_"><p class="lable-text required-to-fill">Phone</p>
+                                 <p><input tabindex="2" type="tel" id="userPhone_" placeholder="Your phone number" name="userPhone" required></p>
+                              </label>
+                           </div>
+                           <div>
+                              <label for="userEmail_"><p class="lable-text">Email</p>
+                                 <p><input tabindex="3" type="email" id="userPhone_" placeholder="Your working email" name="userEmail"></p>
+                              </label>
+                           </div>
+                           <div>
+                              <label for="interested-in_"><p class="lable-text">I am interested in</p>
+                                 <p>
+                                    <select tabindex="4" name="interested-in" id="interested-in_">
+                                       <option value="" disabled selected>Select...</option>
+                                       <option value="Interior_Design">Interior Design</option>
+                                       <option value="Architectural_Design">Architectural Design</option>
+                                       <option value="Renovation_Remodeling">Renovation & Remodeling</option>
+                                       <option value="3D_Modeling_Visualization">3D Modeling & Visualization</option>
+                                       <option value="LEED_Certification_Consulting">LEED Certification Consulting</option>
+                                    </select>
+                                 </p>
+                              </label>
+                           </div>
+                           <div>
+                              <label for="location_"><p class="lable-text required-to-fill">Location</p>
+                                 <p>
+                                    <select tabindex="5" name="location" id="location_" required>
+                                       <option value="" disabled selected>Select city...</option>
+                                       <option value="NY">New York</option>
+                                       <option value="LA">Los Angeles</option>
+                                       <option value="Chicago">Chicago</option>
+                                       <option value="Houston">Houston</option>
+                                       <option value="Philadelphia">Philadelphia</option>
+                                    </select>
+                                 </p>
+                              </label>
+                           </div>
+                           <div>
+                              <p class="lable-text radio-lable">Preferred contact method</p>
+                              <div class="radio-buttons">
+                                    <div>
+                                       <input tabindex="6" type="radio" name="contact_method" value="Phone" id="contact_method_phone">
+                                       <label for="contact_method_phone">Phone</label>
+                                    </div>
+                                    <div>
+                                       <input tabindex="6" type="radio" name="contact_method" value="Email" id="contact_method_email">
+                                       <label for="contact_method_email">Email</label>
+                                    </div>
+                                    <div>
+                                       <input tabindex="6" type="radio" name="contact_method" value="Viber" id="contact_method_viber">
+                                       <label for="contact_method_viber">Viber</label>
+                                    </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="message-field">
+                           <label for="message_"><p class="lable-text required-to-fill">Message</p>
+                              <div class="textarea-block"><textarea tabindex="7" name="message" id="message_" placeholder="Your message" required></textarea></div>
+                           </label> 
+                        </div>
+                        <div class="buttons-fields">
+                           <div>
+                                 <div class="flex-box-agreement">
+                                    <div class=""><input tabindex="8" type="checkbox" name="agreement" id="agreement_" value = "YES" required></div>
+                                    <label for="agreement_">I agree to receive communications from Createx Construction Bureau.</label>
+                                 </div>
+                           </div>
+                           <div class="flex-button" >
+                              <button tabindex="9" class="button" type="submit">send request</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
+         </main>
+      
+   </div>
+</body>
+</html>

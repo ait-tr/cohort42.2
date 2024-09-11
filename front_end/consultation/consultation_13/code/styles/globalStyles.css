@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*--------------------*/
+body{
+   font-family: "Ubuntu";
+}
+.wrapper {
+   
+
+}
+.container {
+   margin: 0 auto;
+   padding:0 20px;
+   max-width: 1230px;
+}
+.header {
+   height: 92px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.logo-nav {
+   min-width: 640px;
+   display: flex;
+   gap: 40px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.logo {
+}
+.navbar {
+   display: flex;
+   gap: 10px;
+
+}
+.navbar__item {
+   width: 85px;
+   height: 35px;
+   font-size: 16px;
+   line-height: 35px;
+   font-weight: 700;
+   text-align: center;
+   color: #424551;
+   transition: 0.4s;
+}
+
+.navbar__item:hover{
+   box-shadow: 0 0 10px #FF5A30;
+   transition: 0.4s;
+   border-radius: 20px;
+}
+.contacts {
+   display: flex;
+   gap: 36px;
+   justify-content: space-between;
+   align-items: center;
+
+}
+.contacts__item a{
+   color:#1E212C;
+}
+
+.contacts__text {
+   font-size: 14px;
+   font-weight: 700;
+   line-height: 21px;
+}
+.contacts__coordinates {
+   font-size: 18px;
+   line-height: 27px;
+}
+.item-phone{
+   padding: 0 0 0 50px;
+   background: url(../assets/iPhone.svg)left  no-repeat;
+
+
+}
+
+.item-email{
+   padding: 0 0 0 50px;
+   background: url(../assets/Chat.svg)left  no-repeat;
+}

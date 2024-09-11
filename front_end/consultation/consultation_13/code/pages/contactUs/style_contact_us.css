@@ -1,0 +1,190 @@
+
+.content {
+   margin: 89px 0 0 0;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 46px;
+   text-align: center;
+   margin: 0 0 24px 0;
+   color: #1E212C;
+}
+.text {
+   margin: 0 0 60px 0;
+   font-size: 18px;
+   text-align: center;
+}
+.block-form {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   gap: 80px;
+}
+.bolock-form__img {
+   max-width: 495px;
+}
+.bolock-form__img img{
+   width: 100%;
+}
+
+.form-flex-container{
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+.data-fields {
+   max-height: 306px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.lable-text{
+   margin: 0 0 8px 0;
+}
+
+.required-to-fill::after {
+   content: "*";
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+   width: 285px;
+   height: 52px;
+   border: 1px solid #D7DADD;
+   padding: 13px 16px;
+   background-color: #F4F5F6;
+}
+
+.select{
+   color:#424551;
+
+}
+input:focus,
+
+textarea:focus,
+select:focus{
+   border-color:#FF5A30;
+   box-shadow: 0 0 5px #FF5A30;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder{
+   color:#9A9CA5;
+
+}
+
+
+.radio-lable{
+   margin: 0 0 20px 0;
+}
+
+.radio-buttons {
+   display: flex;
+   gap: 24px;
+}
+input[type ="radio"]{
+   appearance: none; /* Скрывает стандартный вид радио-кнопки */
+   margin: 0 5px 0 0;
+   width: 12px;
+   height: 12px;
+   border: 1px solid #B3B7BC;
+   border-radius: 50%;
+   outline: none;
+   cursor: pointer;
+   position: relative;
+}
+
+input[type ="radio"]:checked{
+   border: 1px solid #FF5A30;
+}
+
+ /* Стилизуем состояние checked */
+input[type="radio"]:checked::before {
+   content: '';
+   display: block;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: #FF5A30; /* Цвет заливки при выборе */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.textarea-block{
+   max-width: 600px;
+   height: 128px;
+}
+textarea{
+   width: 100%;
+   height: 100%;
+}
+.buttons-fields {
+   display: flex;
+   gap: 75px;
+   justify-content: space-between;
+}
+.flex-box-agreement{
+   max-width: 315px;
+   display: flex;
+   gap: 7px;
+}
+.flex-box-agreement input{
+   align-self: start;
+}
+
+input[type="checkbox"] {
+   appearance: none;
+   width: 16px;
+   height: 16px;
+   border: 1px solid #B3B7BC;
+   border-radius: 4px;
+   position: relative;
+   cursor: pointer;
+   outline: none;
+}
+/* Стилизация галочки при checked */
+input[type="checkbox"]:checked{
+   background-color:#FF5A30;
+   border:none; 
+}
+input[type="checkbox"]:checked::before {
+   content: '';
+   background-image: url(../../assets/check.png);
+   display: block;
+   position: relative;
+   width: 16px;
+   height: 16px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.flex-button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+button:focus{
+   box-shadow: 0 5px 15px #FF5A30;
+}
+
+.button{
+   width: 210px;
+   height: 52px;
+   background-color: #FF5A30;
+   border-radius: 4px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 16px;
+}
