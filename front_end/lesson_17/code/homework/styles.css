@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.freepik.com/free-photo/outer-space-background_53876-88651.jpg?w=1380&t=st=1708912426~exp=1708913026~hmac=c71c5ac8628ba095b74031dd4cec6b70619a083334e1e34fe4b1744da0e4a9d4)
+    no-repeat;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.spaceship-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 350px;
+  min-width: 400px;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #151042;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.spaceship-container > p {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #0c2057;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b0e49;
+}
+
+.hidden {
+  opacity: 0;
+}
