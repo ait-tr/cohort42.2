@@ -4,9 +4,9 @@
 
 Задание нужно выполнять в группах:
 
-1. 1 группа - Участники: Вера Риферт, Rustam_Zamanov, Elizaveta Kashnitskaya, Paul Pufel
+1. 1 группа - Участники: Вера Риферт, Rustam_Zamanov, Elizaveta Kashnitskaya, Paul Pufel, Александр Бадаев
 2. 2 группа - Участники: Anton Okhrimenko, Elena Suslova, Maxim Iatiuc, Anastasia Cherkashyna, Tatiana
-3. 3 группа - Участники: Yulya Dietz, Lina Göbel, Tatiana N, Viktor Romanenko, Stanislav Borysenko
+3. 3 группа - Участники: Yulya Dietz, Lina Göbel, Tatiana N, Viktor Romanenko, Stanislav Borysenko, Anischenko Alexander
 
 #### Требования:
 
