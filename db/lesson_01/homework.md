@@ -7,3 +7,5 @@
 [ссылка](http://sql-island.informatik.uni-kl.de/?lang=de)
 
 Ссылка на игру на английском: [ссылка](http://sql-island.informatik.uni-kl.de/?lang=en)
+
+##### Дедлайн: 24.10.2024 до 15:00
