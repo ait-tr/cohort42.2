@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_05/src/YouTubeAnalyzer.java",
+    "code/Lesson_05/src/YouTubeAnalyzerTest.java",
+    "code/Lesson_05/src/YoutubeVideo.java",
+    "code/Lesson_05/src/javastreams.txt"
+  ]
+}
