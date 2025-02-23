@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_05/src/ByteStreamWriter.java",
+    "code/Lesson_05/src/GeoApp.java",
+    "code/Lesson_05/src/Weather.java",
+    "code/Lesson_05/src/WeatherApp.java",
+    "code/Lesson_05/src/WeatherAppTest.java",
+    "code/Lesson_05/src/WeatherTestData.java"
+
+  ]
+}
