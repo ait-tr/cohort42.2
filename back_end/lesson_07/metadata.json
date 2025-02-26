@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_07/src/DemoThreadExtendsThread.java",
+    "code/Lesson_07/src/DemoThreadExtendsThreadApp.java",
+    "code/Lesson_07/src/DemoThreadRunnable.java",
+    "code/Lesson_07/src/DemoThreadRunnableApp.java",
+    "code/Lesson_07/src/threads.txt"
+  ]
+}
