@@ -1,0 +1,9 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_08/src/Car.java",
+    "code/Lesson_08/src/RestApiCarController.java"
+  ]
+}
